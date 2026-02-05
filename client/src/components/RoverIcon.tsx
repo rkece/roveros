@@ -1,4 +1,4 @@
-import React from 'react';
+
 
 export const RoverIcon = ({ className = "w-6 h-6", fill = "currentColor" }: { className?: string, fill?: string }) => (
     <svg viewBox="0 0 100 100" className={className} xmlns="http://www.w3.org/2000/svg">

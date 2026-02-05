@@ -4,7 +4,7 @@ import axios from "axios";
 
 export const useAuth = () => {
     const navigate = useNavigate();
-    const [user, setUser] = useState<{ username: string, role: string, token: string } | null>(() => {
+    const [user, setUser] = useState<{ username: string, email: string, role: string, token: string } | null>(() => {
         const stored = localStorage.getItem('rover_user');
         return stored ? JSON.parse(stored) : null;
     });
