@@ -35,7 +35,7 @@ const AuthPage = () => {
     };
 
     return (
-        <div className="min-h-screen w-full flex items-center justify-center bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-neo-primary/10 via-black to-black relative overflow-hidden">
+        <div className="min-h-screen w-full flex items-center justify-center bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-neo-primary/10 via-black to-black relative overflow-y-auto overflow-x-hidden py-12 px-4">
             {/* Background Elements */}
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-neo-primary/5 rounded-full blur-[100px]" />
             <div className="absolute inset-0 bg-[linear-gradient(rgba(255,215,0,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,215,0,0.03)_1px,transparent_1px)] bg-[size:30px_30px]" />

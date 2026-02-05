@@ -7,7 +7,7 @@ const DashboardLayout = () => {
     const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
     return (
-        <div className="flex h-screen bg-neo-bg overflow-hidden text-neo-text">
+        <div className="flex flex-col md:flex-row h-screen md:h-screen w-full bg-neo-bg overflow-hidden text-neo-text">
             {/* Sidebar Area */}
             <Sidebar isOpen={isSidebarOpen} onClose={() => setIsSidebarOpen(false)} />
 
