@@ -1,0 +1,17 @@
+{
+    "name": "rover-os-root",
+    "version": "1.0.0",
+    "private": true,
+    "scripts": {
+        "build": "cd client && npm install && npm run build",
+        "client": "cd client && npm run dev",
+        "server": "cd server && npm start",
+        "dev": "concurrently \"npm run server\" \"npm run client\""
+    },
+    "devDependencies": {
+        "concurrently": "^8.2.2"
+    },
+    "engines": {
+        "node": ">=18.0.0"
+    }
+}
