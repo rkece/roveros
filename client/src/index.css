@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-neo-bg text-neo-text font-orbitron antialiased transition-colors duration-500;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-orbitron tracking-wider text-neo-text;
+  }
+}
+
+@layer components {
+  .neo-panel {
+    @apply bg-neo-panel backdrop-blur-md border border-white/5 rounded-xl shadow-neo transition-all duration-300;
+  }
+
+  .neo-panel-hover {
+    @apply hover:shadow-neo-hover hover:border-neo-primary/40 hover:bg-neo-panel/90 hover:-translate-y-1;
+  }
+
+  .neo-input {
+    @apply bg-black/50 border border-white/10 rounded-lg px-4 py-2 text-neo-text placeholder-neo-muted focus:outline-none focus:border-neo-primary focus:ring-1 focus:ring-neo-primary/50 transition-all duration-300;
+  }
+
+  .neo-btn {
+    @apply px-6 py-3 rounded-lg font-orbitron font-bold tracking-wide transition-all duration-300 transform active:scale-95 cursor-pointer select-none border relative overflow-hidden;
+  }
+
+  .neo-btn-primary {
+    @apply bg-transparent text-neo-primary border-neo-primary/50 hover:bg-neo-primary hover:text-white hover:border-neo-primary;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.1);
+  }
+
+  .neo-btn-primary:hover {
+    box-shadow: 0 0 25px rgba(255, 215, 0, 0.6);
+  }
+
+  .neo-btn-secondary {
+    @apply bg-transparent text-neo-secondary border-neo-secondary/50 hover:bg-neo-secondary hover:text-white hover:border-neo-secondary;
+    box-shadow: 0 0 10px rgba(6, 182, 212, 0.1);
+    /* fallback/base */
+  }
+
+  .neo-btn-secondary:hover {
+    box-shadow: 0 0 20px rgba(6, 182, 212, 0.6);
+  }
+
+  .neo-btn-alert {
+    @apply bg-transparent text-neo-alert border-neo-alert/50 hover:bg-neo-alert hover:text-white hover:border-neo-alert;
+    box-shadow: 0 0 10px rgba(244, 63, 94, 0.1);
+    /* fallback/base */
+  }
+
+  .neo-btn-alert:hover {
+    box-shadow: 0 0 20px rgba(244, 63, 94, 0.6);
+  }
+}
+
+/* Custom Scrollbar for Dark Theme */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-black/20;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-neo-primary/30 rounded-full hover:bg-neo-primary/50;
+}

@@ -1,0 +1,28 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+    <!-- Futuristic Hexagon Enclosure -->
+    <path
+        d="M50 8 L88 28 V72 L50 92 L12 72 V28 Z"
+        fill="none"
+        stroke="#FFD700"
+        stroke-width="6"
+        stroke-linejoin="round"
+    />
+
+    <!-- Tech Nodes -->
+    <circle cx="12" cy="28" r="4" fill="#FFD700" />
+    <circle cx="88" cy="28" r="4" fill="#FFD700" />
+    <circle cx="88" cy="72" r="4" fill="#FFD700" />
+    <circle cx="12" cy="72" r="4" fill="#FFD700" />
+
+    <!-- Central Core / Eye -->
+    <!-- Note: CSS animation would not work in favicon as easily unless inline styles, keeping simple -->
+    <g transform-origin="center">
+        <path d="M50 35 L50 25" stroke="#FFD700" stroke-width="4" />
+        <path d="M50 75 L50 65" stroke="#FFD700" stroke-width="4" />
+        <path d="M30 50 L20 50" stroke="#FFD700" stroke-width="4" />
+        <path d="M80 50 L70 50" stroke="#FFD700" stroke-width="4" />
+        <circle cx="50" cy="50" r="18" fill="none" stroke="#FFD700" stroke-width="3" />
+    </g>
+
+    <circle cx="50" cy="50" r="8" fill="#FFD700" />
+</svg>
